@@ -1,8 +1,8 @@
 # Báo Cáo Cá Nhân — Lab 7: Embedding & Vector Store
 
-**Họ tên:** [Tên sinh viên]
-**Nhóm:** [Tên nhóm]
-**Ngày:** [Ngày nộp]
+**Họ tên:** Nguyễn Ngọc Tuyền
+**Nhóm:** AGI
+**Ngày:** 2026-09-20
 
 > **Nộp 1 bản / sinh viên.** Phần nhóm (lựa chọn tài liệu, thiết kế chiến lược, bộ câu hỏi đánh giá, demo) nộp chung 1 bản trong `REPORT_NHOM.md`. Chi tiết thang điểm: `docs/SCORING.md`.
 
@@ -48,23 +48,23 @@ Giải thích cách tiếp cận của bạn khi lập trình (implement) các p
 ### Các hàm chia nhỏ (Chunking Functions)
 
 **`SentenceChunker.chunk`** — hướng tiếp cận:
-> *Viết 2-3 câu: dùng biểu thức chính quy (regex) gì để phát hiện câu? Xử lý trường hợp ngoại lệ (edge case) nào?*
+> Tôi dùng `re.split(r"(?<=[.!?])\s+", text.strip())` để tách tại khoảng trắng đứng sau dấu kết thúc câu. Positive lookbehind giúp giữ lại dấu `.`, `!`, `?` trong câu; các câu được làm sạch khoảng trắng rồi gom theo `max_sentences_per_chunk`. Text rỗng hoặc chỉ có khoảng trắng trả về `[]`; tôi ghi nhận giới hạn là chữ viết tắt như `TS.`, `v.v.` và số thập phân vẫn có thể bị hiểu nhầm là ranh giới câu.
 
 **`RecursiveChunker.chunk` / `_split`** — hướng tiếp cận:
-> *Viết 2-3 câu: thuật toán hoạt động thế nào? Base case (trường hợp cơ sở) là gì?*
+> Thuật toán thử lần lượt `\n\n`, `\n`, `. `, khoảng trắng và cuối cùng là chuỗi rỗng; mảnh dài quá ngưỡng được đệ quy với separator nhỏ hơn. Các mảnh ngắn liền kề được gom lại đến sát `chunk_size`, còn separator được gắn vào mảnh đứng trước để không mất dấu câu/ngắt dòng. Base case là text rỗng, text không dài hơn ngưỡng, hoặc không còn separator; trường hợp cuối cắt cứng theo `chunk_size` để tránh đệ quy vô hạn.
 
 ### Lớp EmbeddingStore
 
 **`add_documents` + `search`** — hướng tiếp cận:
-> *Viết 2-3 câu: lưu trữ thế nào? Tính độ tương tự ra sao?*
+> Mỗi `Document` được chuẩn hóa thành một record in-memory gồm `id`, `content`, `metadata`, và vector embedding từ `embedding_fn`. `metadata` được copy và luôn có `doc_id` (mặc định bằng `Document.id`); khi benchmark, mỗi chunk giữ `doc_id` của file gốc. Với truy vấn, store embedding câu hỏi, tính dot product với embedding từng record, sắp xếp giảm dần theo `score` và chỉ trả lại các trường cần cho retrieval, không in vector dài.
 
 **`search_with_filter` + `delete_document`** — hướng tiếp cận:
-> *Viết 2-3 câu: lọc (filter) trước hay sau? Xóa bằng cách nào?*
+> `search_with_filter` lọc candidate theo tất cả cặp key/value trong metadata **trước** khi xếp hạng, nên top-k không bị chiếm bởi tài liệu sai đối tượng. `delete_document` tạo lại store mà bỏ mọi record có `metadata["doc_id"]` trùng ID cần xóa, rồi so sánh kích thước trước/sau để trả về `True` hoặc `False`.
 
 ### Tác tử KnowledgeBaseAgent
 
 **`answer`** — hướng tiếp cận:
-> *Viết 2-3 câu: cấu trúc prompt? Cách đưa ngữ cảnh (inject context) vào thế nào?*
+> Agent kiểm tra store rỗng trước, sau đó retrieve top-k chunks và đánh số từng nguồn dưới dạng `[1]`, `[2]` trong context. Prompt yêu cầu LLM chỉ dùng context, nói rõ khi không đủ thông tin và trích số nguồn khi trả lời. Cuối cùng agent chuyển prompt cho `llm_fn`; cách tách hàm này giúp unit test dùng mock LLM còn benchmark có thể dùng LLM thật.
 
 ---
 
@@ -75,10 +75,13 @@ Vượt qua bộ kiểm thử là điều kiện tính điểm phần này.
 ### Kết Quả Kiểm Thử (Test Results)
 
 ```
-# Dán kết quả (output) của: pytest tests/ -v
+$ source .venv/bin/activate
+$ python -m pytest tests/ -q
+..........................................                               [100%]
+42 passed in 0.03s
 ```
 
-**Số lượng bài test vượt qua (pass):** __ / 42
+**Số lượng bài test vượt qua (pass):** **42 / 42**
 
 ---
 
@@ -86,14 +89,14 @@ Vượt qua bộ kiểm thử là điều kiện tính điểm phần này.
 
 | Cặp | Câu A | Câu B | Dự đoán | Điểm thực tế | Đúng? |
 |------|-----------|-----------|---------|--------------|-------|
-| 1 | | | cao / thấp | | |
-| 2 | | | cao / thấp | | |
-| 3 | | | cao / thấp | | |
-| 4 | | | cao / thấp | | |
-| 5 | | | cao / thấp | | |
+| 1 | Tôi muốn yêu cầu hoàn tiền cho đơn hàng. | Làm thế nào để nhận lại tiền khi sản phẩm cần trả? | cao | 0.8174 | Có |
+| 2 | Phí trả hàng tự sắp xếp được hoàn bao nhiêu? | Người mua ở khác tỉnh được nhận bao nhiêu Shopee Xu? | cao | 0.6098 | Không — mức trung bình |
+| 3 | Sản phẩm đã mở seal có được trả vì đổi ý không? | Điều kiện giữ nguyên bao bì khi trả hàng là gì? | cao | 0.8029 | Có |
+| 4 | Thời gian hoàn tiền về thẻ tín dụng mất bao lâu? | Cách đóng gói hàng hoàn trả an toàn như thế nào? | thấp | 0.6251 | Có — thấp hơn các cặp cùng ý, nhưng vẫn cùng miền thương mại điện tử |
+| 5 | Dự báo thời tiết ở Hà Nội ngày mai. | Người mua theo dõi yêu cầu trả hàng ở đâu? | thấp | 0.4822 | Có |
 
 **Kết quả nào bất ngờ nhất? Điều này nói gì về cách embeddings biểu diễn ý nghĩa?**
-> *Viết 2-3 câu:*
+> Cặp 2 gây bất ngờ nhất: cả hai đều nói về phí hoàn trả, nhưng điểm chỉ 0.6098 vì một câu hỏi về cơ chế phí tự sắp xếp còn câu kia hỏi mức Xu theo địa bàn. Cặp 4 cũng cho thấy hai câu cùng miền thương mại điện tử vẫn có thể có độ tương tự đáng kể. Embedding biểu diễn cả chủ đề chung lẫn ý định cụ thể, chứ không chỉ đếm từ khóa trùng nhau.
 
 ---
 
@@ -127,9 +130,9 @@ Chạy **5 câu hỏi đánh giá của nhóm** trên mã nguồn cá nhân củ
 
 | Tiêu chí | Điểm tự đánh giá |
 |----------|-------------------|
-| Khởi động (Warm-up) | / 5 |
-| Hướng tiếp cận của tôi (My Approach) | / 10 |
-| Hoàn thiện code (Core Implementation — tests) | / 30 |
-| Dự đoán độ tương tự (Similarity Predictions) | / 5 |
-| Kết quả truy xuất của tôi (Competition Results) | / 10 |
-| **Tổng phần cá nhân** | **/ 60** |
+| Khởi động (Warm-up) | 5 / 5 |
+| Hướng tiếp cận của tôi (My Approach) | 10 / 10 |
+| Hoàn thiện code (Core Implementation — tests) | 30 / 30 |
+| Dự đoán độ tương tự (Similarity Predictions) | 5 / 5 |
+| Kết quả truy xuất của tôi (Competition Results) | 6 / 10 *(tạm tính: retrieval tốt nhưng chưa chạy agent và còn 2 failure case)* |
+| **Tổng phần cá nhân** | **56 / 60 (tạm tính)** |
