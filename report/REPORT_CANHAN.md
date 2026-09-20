@@ -15,29 +15,29 @@
 ### Độ tương tự Cosine (Cosine Similarity) (Bài tập 1.1)
 
 **Độ tương tự cosine cao (High cosine similarity) nghĩa là gì?**
-> *Viết 1-2 câu:*
+> Hai văn bản có hướng biểu diễn embedding gần nhau, tức chúng có ý nghĩa hoặc ngữ cảnh tương tự. Điểm càng gần 1 thì mức độ tương đồng ngữ nghĩa càng cao.
 
 **Ví dụ có độ tương tự CAO:**
-- Câu A:
-- Câu B:
-- Tại sao tương đồng:
+- Câu A: Tôi muốn đổi trả chiếc áo đã mua.
+- Câu B: Làm thế nào để hoàn tiền cho sản phẩm không phù hợp?
+- Tại sao tương đồng: Hai câu diễn đạt bằng từ khác nhau nhưng cùng nói về nhu cầu đổi trả/hoàn tiền sau khi mua hàng.
 
 **Ví dụ có độ tương tự THẤP:**
-- Câu A:
-- Câu B:
-- Tại sao khác:
+- Câu A: Chính sách bảo hành điện thoại kéo dài bao lâu?
+- Câu B: Hôm nay trời có mưa không?
+- Tại sao khác: Hai câu thuộc hai chủ đề và mục đích hoàn toàn khác nhau: một câu hỏi về chính sách sản phẩm, câu còn lại hỏi thời tiết.
 
 **Tại sao độ tương tự cosine (cosine similarity) được ưu tiên hơn khoảng cách Euclid (Euclidean distance) cho text embeddings?**
-> *Viết 1-2 câu:*
+> Cosine similarity so sánh góc giữa các vector, nên tập trung vào hướng ngữ nghĩa thay vì độ lớn của vector. Với text embedding, hai câu cùng nghĩa vẫn nên gần nhau dù vector của chúng có độ dài khác nhau; vì vậy cosine thường phù hợp hơn khoảng cách Euclid.
 
 ### Bài toán tính toán Chunking (Bài tập 1.2)
 
 **Tài liệu 10,000 ký tự, chunk_size=500, overlap=50. Bao nhiêu chunks?**
-> *Trình bày phép tính:*
-> *Đáp án:*
+> *Trình bày phép tính:* `ceil((10000 - 50) / (500 - 50)) = ceil(9950 / 450) = ceil(22,11)`
+> *Đáp án:* **23 chunks**.
 
 **Nếu độ chồng chéo (overlap) tăng lên 100, số lượng chunk thay đổi thế nào? Tại sao muốn độ chồng chéo nhiều hơn?**
-> *Viết 1-2 câu:*
+> Với `overlap=100`: `ceil((10000 - 100) / (500 - 100)) = ceil(9900 / 400) = ceil(24,75) = 25`, nên số chunk tăng từ 23 lên **25**. Overlap lớn hơn giữ lại ngữ cảnh ở ranh giới giữa hai chunk, giảm nguy cơ một ý hoặc câu trả lời bị cắt rời; đánh đổi là cần lưu trữ và xử lý nhiều chunk hơn.
 
 ---
 
