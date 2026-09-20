@@ -1,21 +1,30 @@
 ---
-doc_id: return-refund-policy
-title: Những quy định chung về Trả hàng và Hoàn tiền của Shopee
-audience: buyer
-category: returns-policy
-language: vi
-source_url: https://help.shopee.vn/portal/4/article/188931
-retrieved_at: 2026-09-20
-document_version: "not-stated"
+doc_id: "shopee-returns-188931"
+article_id: 188931
+title: "[Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee"
+audience: "buyer"
+category: "Trả Hàng & Hoàn Tiền"
+category_id: 61
+sub_category: "Những quy định chung về Trả hàng/ Hoàn tiền"
+sub_category_id: 17788
+language: "vi"
+source_url: "https://help.shopee.vn/portal/4/article/188931"
+retrieved_at: "2026-09-20"
+document_version: "1.0"
+character_count: 6693
+word_count: 1301
 ---
 
-# Những quy định chung về Trả hàng và Hoàn tiền của Shopee
+# [Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee
 
-## 1. Điều kiện Trả hàng/Hoàn tiền của Shopee
+## 1\. Điều kiện Trả hàng/Hoàn tiền của Shopee
 
 1.1. Nguyên tắc chung
 
 Shopee hiện chưa hỗ trợ yêu cầu đổi hàng. Nếu hàng nhận được có vấn đề (khác với mô tả, hư hỏng,...), bạn có thể từ chối nhận hàng khi đồng kiểm (đối với đơn hàng được Đồng kiểm),  hoặc có thể gửi yêu cầu Trả hàng/Hoàn tiền sau khi đã nhận hàng.
+
+**  
+**
 
 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee
 
@@ -30,6 +39,9 @@ Thời gian để Shopee tiếp nhận yêu cầu Trả hàng/Hoàn tiền từ 
 \+ 20 ngày kể từ lúc đơn hàng được cập nhật trạng thái ‘Lấy hàng thành công’ và bạn không bấm ‘Đã nhận được hàng’.
 
   * Đối với các đơn hàng khác: 15 ngày kể từ lúc đơn hàng được cập nhật trạng thái ‘Giao hàng thành công’.
+
+**  
+**
 
 ⚠️ Lưu ý:
 
@@ -47,6 +59,9 @@ Thời gian để Shopee tiếp nhận yêu cầu Trả hàng/Hoàn tiền từ 
 
 Bạn có thể yêu cầu Trả hàng/Hoàn tiền trong các trường hợp sau:
 
+**  
+**
+
 Lý do  | Trường hợp áp dụng| Điều kiện áp dụng   
 ---|---|---  
 Chưa nhận được hàng| Chưa nhận được gói hàng nhưng đã cập nhật giao hàng thành công trên ứng dụng hoặc đơn hàng đã quá thời hạn giao hàng dự kiến (dành cho đơn thanh toán trả trước)| Tất cả sản phẩm  
@@ -63,7 +78,10 @@ Hàng đã qua sử dụng| Sản phẩm có dấu hiệu đã qua sử dụng (
 Hàng giả/nhái| Sản phẩm có dấu hiệu làm giả/nhái sản phẩm thương hiệu nổi tiếng/đã được bảo hộ| Tất cả sản phẩm  
 Đổi ý (Sản phẩm còn nguyên tem, nhãn mác, bao bì)| Chỉ áp dụng khi sản phẩm trả còn nguyên trạng ban đầu: chưa bóc tem/khui hộp/sử dụng/lắp đặt/tác động, còn nguyên vẹn tem/nhãn mác/phụ kiện/quà tặng đính kèm (nếu có).| **•** Từ ngày 24/11/2025, áp dụng cho nhóm người mua hạng Kim Cương, Vàng và người dùng đăng ký thành công gói Shopee VIP. **•** Ngoại trừ một số loại sản phẩm, bao gồm:\+ Sản phẩm thuộc [danh sách hạn chế trả hàng](https://help.shopee.vn/portal/4/article/79465)\+ **Các sản phẩm mua tại[ Shopee Mart](https://help.shopee.vn/portal/4/article/79577)**\+ Một số sản phẩm riêng biệt được ghi nhận rõ ràng và theo quyết định của Shopee tại từng thời điểm cụ thể [tại đây](https://help.shopee.vn/portal/4/article/204305-Nh%E1%BB%AFng-%C4%91i%E1%BB%81u-c%E1%BA%A7n-bi%E1%BA%BFt-v%E1%BB%81-Tr%E1%BA%A3-h%C3%A0ng-do-%22%C4%90%E1%BB%95i-%C3%BD%2Fkh%C3%B4ng-c%C3%B2n-nhu-c%E1%BA%A7u%22?previousPage=secondary%20category)  
   
-## 2. Quy định chung về việc hoàn lại Mã giảm giá/Shopee Xu khi yêu cầu Trả hàng/Hoàn tiền
+## 2\. Quy định chung về việc hoàn lại Mã giảm giá/Shopee Xu khi yêu cầu Trả hàng/Hoàn tiền
+
+**  
+**
 
 Trường hợp|  Loại khiếu nại| Mã giảm giá| Shopee Xu  
 ---|---|---|---  
@@ -72,6 +90,8 @@ Khiếu nại trên một/ một vài sản phẩm| Không hoàn mã| Hoàn Xu t
 Trả hàng & Hoàn tiền| Khiếu nại trên toàn bộ sản phẩm| Mã giảm giá sẽ được hoàn.| **·** Hoàn lại Xu theo số sản phẩm được hoàn. **·** Hoàn tất cả sản phẩm: Hoàn toàn bộ Xu.   
 Khiếu nại trên một/ một vài sản phẩm| Mã giảm giá sẽ không được hoàn|  Hoàn Xu theo tỷ lệ giá trị sản phẩm.  
   
+**  
+**
 
 ⚠️ Lưu ý:
 

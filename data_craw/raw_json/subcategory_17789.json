@@ -1,0 +1,24 @@
+{
+  "total": 3,
+  "articles": [
+    {
+      "id": 79467,
+      "title": "[Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền",
+      "translated_title": "",
+      "is_in_blacklist": false
+    },
+    {
+      "id": 79233,
+      "title": "[Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền",
+      "translated_title": "",
+      "is_in_blacklist": false
+    },
+    {
+      "id": 79258,
+      "title": "[Trả hàng/Hoàn tiền] Cẩm nang Trả hàng hoàn tiền",
+      "translated_title": "",
+      "is_in_blacklist": false
+    }
+  ],
+  "last_mod": "2026-09-20"
+}

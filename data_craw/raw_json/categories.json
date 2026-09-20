@@ -1,0 +1,526 @@
+{
+  "dir_info": [
+    {
+      "id": 57,
+      "icon_url": "{\"activity\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/26151174dd6e45b5a48646d647b5b314.png\",\"large\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/690d84d4103544139d22ba177c6dca97.png\",\"normal\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/61f433475b954448856c00e8060a2a2a.png\"}",
+      "category_name": "Mua Sắm Cùng Shopee",
+      "translated_category_name": "",
+      "quantity": 0,
+      "category_url": {
+        "pc_url": "",
+        "app_url": ""
+      },
+      "sub_dir_info": [
+        {
+          "id": 707,
+          "icon_url": "",
+          "category_name": "Người dùng mới",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 704,
+          "icon_url": "",
+          "category_name": "Thao tác",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 713,
+          "icon_url": "",
+          "category_name": "Tính năng của Shopee",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 711,
+          "icon_url": "",
+          "category_name": "Khám phá",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 722,
+          "icon_url": "",
+          "category_name": "Thanh toán đơn hàng",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 734,
+          "icon_url": "",
+          "category_name": "Phổ biến",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 725,
+          "icon_url": "",
+          "category_name": "Shopee Mall",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 739,
+          "icon_url": "",
+          "category_name": "Shopee Mart",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 17107,
+          "icon_url": "",
+          "category_name": "SEasy Vay Tiền Nhanh",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "icon_url": "{\"activity\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/eb9b6ae34f5b40fe9476b6103af98d8f.png\",\"large\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/c2fb3ede3472487c82131982f5ab8cbf.png\",\"normal\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/fba5af1edd19487184c62f33f7c90709.png\"}",
+      "category_name": "Khuyến Mãi & Ưu Đãi",
+      "translated_category_name": "",
+      "quantity": 0,
+      "category_url": {
+        "pc_url": "",
+        "app_url": ""
+      },
+      "sub_dir_info": [
+        {
+          "id": 705,
+          "icon_url": "",
+          "category_name": "Chương trình khuyến mãi",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 709,
+          "icon_url": "",
+          "category_name": "Chương trình cho Người dùng",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 17520,
+          "icon_url": "",
+          "category_name": "ShopeeVIP",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "icon_url": "{\"activity\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/fe8220b43ea84a4dab68d7e9ebae27c8.png\",\"large\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/a7c785163abc4abcbeeaefcb5bc54cc1.png\",\"normal\":\"https://fileproxycdn.cs.susercontent.com/api/v5/service/download/permanent/helpcenter-fe/38ad137a2690419db31177175ee66ec1.png\"}",
+      "category_name": "Thanh Toán",
+      "translated_category_name": "",
+      "quantity": 0,
+      "category_url": {
+        "pc_url": "",
+        "app_url": ""
+      },
+      "sub_dir_info": [
+        {
+          "id": 708,
+          "icon_url": "",
+          "category_name": "Ví ShopeePay",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 11438,
+          "icon_url": "",
+          "category_name": "SPayLater",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 729,
+          "icon_url": "",
+          "category_name": "Shopee Xu",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 737,
+          "icon_url": "",
+          "category_name": "Số dư TK Shopee",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 738,
+          "icon_url": "",
+          "category_name": "Thuế & Hóa đơn",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 728,
+          "icon_url": "",
+          "category_name": "Phương thức thanh toán khác",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 11774,
+          "icon_url": "",
+          "category_name": "Ứng dụng ShopeePay",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "icon_url": "{\"activity\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/cc0ddc53ee384e47bd4374b4957b92a3.png\",\"large\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/a0747397630545a7ae270dadfe73ecf5.png\",\"normal\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/38fedae7159c4d5791983e1a12ebdda8.png\"}",
+      "category_name": "Đơn Hàng & Vận Chuyển",
+      "translated_category_name": "",
+      "quantity": 0,
+      "category_url": {
+        "pc_url": "",
+        "app_url": ""
+      },
+      "sub_dir_info": [
+        {
+          "id": 703,
+          "icon_url": "",
+          "category_name": "Đơn hàng",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 706,
+          "icon_url": "",
+          "category_name": "Đánh giá & Bình luận",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 724,
+          "icon_url": "",
+          "category_name": "Thông tin vận chuyển khác",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 727,
+          "icon_url": "",
+          "category_name": "Phương thức vận chuyển",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "icon_url": "{\"activity\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/c2b34656c1214b4d9b5371e610a781f0.png\",\"large\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/f2bc745edbfd4d7095d87da7dade354a.png\",\"normal\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/e479f18335d14d76803dd1a81c6040fd.png\"}",
+      "category_name": "Trả Hàng & Hoàn Tiền",
+      "translated_category_name": "",
+      "quantity": 0,
+      "category_url": {
+        "pc_url": "",
+        "app_url": ""
+      },
+      "sub_dir_info": [
+        {
+          "id": 17788,
+          "icon_url": "",
+          "category_name": "Những quy định chung về Trả hàng/ Hoàn tiền",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 17789,
+          "icon_url": "",
+          "category_name": "Gửi yêu cầu trả hàng",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 17790,
+          "icon_url": "",
+          "category_name": "Theo dõi yêu cầu trả hàng",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 17792,
+          "icon_url": "",
+          "category_name": "Shopee xem xét",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 17793,
+          "icon_url": "",
+          "category_name": "Trả hàng",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 17791,
+          "icon_url": "",
+          "category_name": "Người bán khiếu nại",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 17794,
+          "icon_url": "",
+          "category_name": "Hoàn tiền",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "icon_url": "{\"activity\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/ca6c1bdac2eb4c9a96a3d2f338f4955c.png\",\"large\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/83c742e5e2cb4f108ea4ee942aa68af2.png\",\"normal\":\"https://cs.deo.shopeemobile.com/shopee/shopee-cs-live-sg/static/helpcenterfe/hc-category-icons/12a4e700427c47ce83b618174966b0dc.png\"}",
+      "category_name": "Thông Tin Chung",
+      "translated_category_name": "",
+      "quantity": 0,
+      "category_url": {
+        "pc_url": "",
+        "app_url": ""
+      },
+      "sub_dir_info": [
+        {
+          "id": 654,
+          "icon_url": "",
+          "category_name": "Chính sách Shopee",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 710,
+          "icon_url": "",
+          "category_name": "Tài khoản Shopee",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 720,
+          "icon_url": "",
+          "category_name": "Mua sắm an toàn",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 721,
+          "icon_url": "",
+          "category_name": "Thư viện thông tin",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 730,
+          "icon_url": "",
+          "category_name": "Ứng dụng Shopee",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 733,
+          "icon_url": "",
+          "category_name": "Khác",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        },
+        {
+          "id": 740,
+          "icon_url": "",
+          "category_name": "Hướng dẫn chung",
+          "translated_category_name": "",
+          "quantity": 0,
+          "category_url": {
+            "pc_url": "",
+            "app_url": ""
+          },
+          "sub_dir_info": []
+        }
+      ]
+    }
+  ]
+}
