@@ -103,16 +103,23 @@ Chạy **5 câu hỏi đánh giá của nhóm** trên mã nguồn cá nhân củ
 
 | # | Câu hỏi (Query) | Top-1 Chunk truy xuất được (tóm tắt) | Điểm Score | Có liên quan không? (Relevant) | Câu trả lời của Agent (tóm tắt) |
 |---|-------|--------------------------------|-------|-----------|------------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Thời gian tối đa gửi yêu cầu Trả hàng/Hoàn tiền theo từng loại đơn hàng là bao lâu? | Chunk từ `quy-dinh-chung-tra-hang-hoan-tien` nêu trực tiếp mốc 24 giờ cho thực phẩm tươi sống/đông lạnh, 15/20 ngày cho đơn tự vận chuyển và 15 ngày cho đơn khác. | 0.8758 | Có — top-1 chứa đủ thông tin của gold answer. | Chưa chạy trong `bench.py`; ngữ cảnh top-1 đủ để agent trả lời có căn cứ. |
+| 2 | Trường hợp hoặc mặt hàng nào không được trả hàng do đổi ý/không còn nhu cầu? | Top-1 từ `san-pham-han-che-tra-hang` xác định nhóm hàng hạn chế trả hàng; top-2 từ `tra-hang-doi-y-khong-con-nhu-cau` nêu hàng đã dùng, mất seal hoặc hàng điện tử đã kích hoạt. | 0.9081 | Có trong top-3, nhưng phải kết hợp nhiều chunk; dữ liệu nguồn không nêu Shopee Mart. | Chưa chạy; không nên khẳng định ý “Shopee Mart” vì chưa có evidence trong corpus. |
+| 3 | Với hình thức Tự sắp xếp, đơn không thuộc Shopee Mall được hoàn Shopee Xu thế nào? | Chunk từ `phuong-thuc-gui-hang-va-phi-hoan-tra` nêu hoàn 25.000 Xu cùng tỉnh và 40.000 Xu khác tỉnh sau khi yêu cầu được chấp nhận. | 0.7956 | Có — top-1 chứa thông tin chính; cùng section cũng nêu mốc hỗ trợ 3–5 ngày làm việc. | Chưa chạy trong `bench.py`; ngữ cảnh top-1 đủ để agent tổng hợp gold answer. |
+| 4 | Nếu Người bán đề xuất Hoàn Tiền Ngay, Người mua xử lý thế nào khi đồng ý/không đồng ý? (`audience=both`) | Top-1 là bối cảnh quy trình; top-2 nêu cách đồng ý và top-3 nêu hai cách không đồng ý. Cả ba đều từ `nguoi-ban-de-xuat-hoan-tien-ngay`. | 0.8716 | Có trong top-3, nhưng top-1 riêng lẻ chưa đủ chi tiết. Filter `audience=both` chọn đúng phạm vi. | Chưa chạy; agent cần tổng hợp top-2 và top-3 để trả lời đầy đủ. |
+| 5 | Tiền hoàn về ShopeePay, SPayLater và thẻ tín dụng/ghi nợ mất bao lâu? | Top-1 chỉ là header bảng; top-2 là phần giới thiệu; top-3 xác nhận ví ShopeePay hoạt động bình thường được hoàn trong 24 giờ. | 0.8693 | Có liên quan, nhưng top-3 chưa chứa đủ mốc SPayLater và thẻ tín dụng/ghi nợ. | Chưa chạy; top-3 hiện chưa đủ grounding để trả lời trọn gold answer. |
 
-**Bao nhiêu câu hỏi trả về chunk có liên quan trong top-3?** __ / 5
+**Bao nhiêu câu hỏi trả về chunk có liên quan trong top-3?** **5 / 5** *(đánh giá độ liên quan theo retrieval; 3/5 có đủ evidence top-3 để trả lời trọn gold answer: câu 1, 3 và 4).*
+
+**Phân tích kết quả benchmark:**
+> Benchmark dùng `RecursiveChunker(chunk_size=500)`, 182 chunks và `gemini-embedding-001`. Retrieval theo nguồn đạt tốt: cả 5 query đều có chunk liên quan trong top-3 và truy xuất đúng tài liệu nguồn chính ở top-1 hoặc top-2. Điểm score nằm trong khoảng 0.7956–0.9081, cho thấy embedding Gemini phân biệt ngữ nghĩa tốt hơn mock embedder.
+>
+> Hai failure case quan trọng là câu 5 và câu 2. Ở câu 5, bảng Markdown có nhiều URL dài bị RecursiveChunker cắt thành các mảnh, nên top-3 chỉ có header/giới thiệu/điều kiện ShopeePay thay vì đủ ba phương thức thanh toán. Ở câu 2, gold answer có ý “sản phẩm mua tại Shopee Mart”, nhưng nội dung này không xuất hiện trong hai tài liệu nguồn đã chỉ định; đây là lỗi thiết kế benchmark chứ không thể coi là lỗi retrieval.
+>
+> Nếu làm lại, tôi sẽ làm sạch URL và ảnh trước khi chunk, giữ nguyên từng bảng Markdown như một block hoặc dùng chunker theo heading/bảng với fallback recursive. Tôi cũng sẽ sửa gold answer câu 2 để chỉ chứa thông tin có trong corpus, hoặc bổ sung một tài liệu công khai có chính sách Shopee Mart.
 
 **Điều hay nhất tôi học được từ thành viên khác / nhóm khác (qua demo):**
-> *Viết 2-3 câu:*
+> Kết quả cho thấy kiểm tra đúng `doc_id` là chưa đủ: một chunk đúng tài liệu vẫn có thể chỉ là tiêu đề hoặc bối cảnh và không đủ để trả lời. Việc xem trực tiếp top-3 giúp phát hiện lỗi cắt bảng, đồng thời cho thấy metadata filter chỉ thực sự có ích khi corpus có các nhóm `audience` cạnh tranh nhau.
 
 ---
 

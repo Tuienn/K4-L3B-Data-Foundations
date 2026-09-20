@@ -99,11 +99,11 @@ Chạy `ChunkingStrategyComparator().compare()` trên 2-3 tài liệu:
 
 | # | Câu hỏi (Query) | Câu trả lời chuẩn (Gold Answer) | Chunk nào chứa thông tin? |
 |---|-------|-------------------------------|--------------------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+| 1 | Thời gian tối đa để Người mua gửi yêu cầu Trả hàng/Hoàn tiền cho Shopee là bao lâu đối với từng loại đơn hàng? | - Thực phẩm tươi sống & đông lạnh: trong vòng 24 giờ kể từ lúc giao hàng thành công.<br>- Đơn Người bán tự vận chuyển: 15 ngày kể từ lúc bấm “Đã nhận được hàng”, hoặc 20 ngày kể từ lúc “Lấy hàng thành công” nếu không bấm nhận hàng.<br>- Các đơn hàng thông thường khác: 15 ngày kể từ lúc giao hàng thành công. | `quy-dinh-chung-tra-hang-hoan-tien.md` — Mục 1.2: Thời gian tối đa |
+| 2 | Những trường hợp hoặc mặt hàng nào không được Shopee chấp nhận trả hàng do đổi ý hoặc không còn nhu cầu? | - Sản phẩm thuộc danh mục hạn chế trả hàng (đồ lót, thực phẩm tươi sống, thẻ cào...).<br>- Sản phẩm mua tại Shopee Mart.<br>- Sản phẩm đã qua sử dụng hoặc bao bì, tem mác, niêm phong của nhà sản xuất không còn nguyên vẹn. | `tra-hang-doi-y-khong-con-nhu-cau.md` và `san-pham-han-che-tra-hang.md` |
+| 3 | Nếu chọn hình thức “Tự sắp xếp” cho đơn hàng không thuộc Shopee Mall, Người mua được hỗ trợ phí trả hàng bằng Shopee Xu như thế nào? | - Cùng tỉnh/thành phố với Người bán: hoàn 25.000 Shopee Xu.<br>- Khác tỉnh/thành phố với Người bán: hoàn 40.000 Shopee Xu.<br>- Shopee hỗ trợ trong 3–5 ngày làm việc sau khi yêu cầu trả hàng được chấp nhận hoàn tiền. | `phuong-thuc-gui-hang-va-phi-hoan-tra.md` — Mục 2.2: Phí vận chuyển trả hàng |
+| 4 ⭐ | Khi Người bán gửi đề xuất Hoàn Tiền Ngay, Người mua có những lựa chọn xử lý nào nếu đồng ý hoặc không đồng ý? **Áp dụng `metadata_filter={"audience": "both"}`.** | - Đồng ý: chọn “Trao đổi thêm” → nhấn “Đồng ý” → nhận tiền hoàn ngay, không cần gửi trả hàng.<br>- Không đồng ý: (1) nhấn “Trao đổi thêm” để chat thương lượng thêm với Người bán; hoặc (2) nhấn “Tôi muốn trả hàng” để tiếp tục quy trình trả sản phẩm và nhận 100% tiền hàng. | `nguoi-ban-de-xuat-hoan-tien-ngay.md` — Bước 2, Trường hợp 1 & 2 |
+| 5 | Thời gian nhận tiền hoàn vào Ví ShopeePay, SPayLater và Thẻ tín dụng/ghi nợ mất bao lâu sau khi Shopee chấp nhận hoàn tiền? | - Ví ShopeePay: trong vòng 24 giờ khi ví hoạt động bình thường.<br>- SPayLater: trong vòng 24 giờ, hoàn vào số dư khả dụng SPayLater.<br>- Thẻ tín dụng/ghi nợ: 7–14 ngày làm việc, tùy ngân hàng phát hành thẻ. | `thoi-gian-va-cach-kiem-tra-tien-hoan.md` |
 
 ### Tổng hợp chất lượng truy xuất của nhóm
 

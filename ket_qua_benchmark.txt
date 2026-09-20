@@ -1,0 +1,81 @@
+=== Ecommerce Retrieval Benchmark ===
+Data directory: data/ecommerce
+Chunker: RecursiveChunker (chunk_size=500)
+Embedding backend: gemini-embedding-001
+Loaded chunks: 182
+Stored chunks: 182
+
+========================================================================================
+Query 1: Thời gian tối đa để Người mua gửi yêu cầu Trả hàng/Hoàn tiền cho Shopee là bao lâu đối với từng loại đơn hàng?
+Gold answer: Thực phẩm tươi sống và đông lạnh: trong vòng 24 giờ kể từ lúc giao hàng thành công. Đơn Người bán tự vận chuyển: 15 ngày kể từ lúc bấm 'Đã nhận được hàng', hoặc 20 ngày kể từ lúc 'Lấy hàng thành công' nếu không bấm nhận hàng. Các đơn hàng thông thường khác: 15 ngày kể từ lúc giao hàng thành công.
+Expected source document(s): quy-dinh-chung-tra-hang-hoan-tien
+Metadata filter: none
+
+Top 1 | score=0.8758 | doc_id=quy-dinh-chung-tra-hang-hoan-tien | audience=buyer
+Thời gian để Shopee tiếp nhận yêu cầu Trả hàng/Hoàn tiền từ bạn sẽ là:    * Đối với đơn hàng giao thực phẩm tươi sống & đông lạnh (trừ lý do Chưa nhận được hàng): Trong vòng 24 giờ kể từ lúc đơn hàng được cập nhật trạng thái ‘Giao hàng thành công’.    * Đối với đơn hàng do Người ...
+
+Top 2 | score=0.8620 | doc_id=quy-dinh-chung-tra-hang-hoan-tien | audience=buyer
+# Những quy định chung về Trả hàng và Hoàn tiền của Shopee  ## 1. Điều kiện Trả hàng/Hoàn tiền của Shopee  1.1. Nguyên tắc chung  Shopee hiện chưa hỗ trợ yêu cầu đổi hàng. Nếu hàng nhận được có vấn đề (khác với mô tả, hư hỏng,...), bạn có thể từ chối nhận hàng khi đồng kiểm (đối ...
+
+Top 3 | score=0.8556 | doc_id=cam-nang-tra-hang-hoan-tien | audience=buyer
+* [_[Trả hàng/Hoàn tiền] Shopee sẽ xử lý yêu cầu Trả hàng/Hoàn tiền của tôi như thế nào?_](https://help.shopee.vn/s/article/shopee-se-xu-ly-yeu-cau-tra-hang-hoan-tien-cua-toi-nhu-the-nao)
+
+========================================================================================
+Query 2: Những trường hợp hoặc mặt hàng nào không được Shopee chấp nhận trả hàng do đổi ý hoặc không còn nhu cầu?
+Gold answer: Không hỗ trợ sản phẩm thuộc danh mục hạn chế trả hàng như đồ lót, thực phẩm tươi sống hoặc thẻ cào; sản phẩm mua tại Shopee Mart; và sản phẩm đã qua sử dụng hoặc có bao bì, tem mác, niêm phong của nhà sản xuất không còn nguyên vẹn.
+Expected source document(s): tra-hang-doi-y-khong-con-nhu-cau, san-pham-han-che-tra-hang
+Metadata filter: none
+
+Top 1 | score=0.9081 | doc_id=san-pham-han-che-tra-hang | audience=buyer
+# Sản phẩm hạn chế trả hàng trên Shopee  Sản phẩm hạn chế trả hàng là những sản phẩm có tính đặc thù cao, dễ hư hỏng hoặc cần điều kiện bảo quản nghiêm ngặt. Đối với nhóm sản phẩm này, Shopee không áp dụng lý do trả hàng “Đổi ý (Sản phẩm còn nguyên tem, nhãn mác, bao bì)”.     Sả...
+
+Top 2 | score=0.8997 | doc_id=tra-hang-doi-y-khong-con-nhu-cau | audience=buyer
+Nhằm nâng cao và đảm bảo chất lượng sản phẩm cũng như hạn chế các rủi ro đối với cả Người mua tiếp theo và Người bán, Shopee sẽ không thể hỗ trợ các trường hợp trả hàng với lý do “Đổi ý” trong các trường hợp bao gồm nhưng không giới hạn sau đây:    * Sản phẩm là hàng điện tử đã đ...
+
+Top 3 | score=0.8967 | doc_id=tra-hang-doi-y-khong-con-nhu-cau | audience=buyer
+(*) Lưu ý: Bảng danh mục sản phẩm này chỉ mang tính tham khảo, có thể thay đổi tùy từng tình huống, từng thời điểm theo quyết định của Shopee.  # 4/ Sản phẩm phải đáp ứng những tiêu chí nào để đủ điều kiện trả hàng do "Đổi ý/không còn nhu cầu"?
+
+========================================================================================
+Query 3: Nếu chọn hình thức 'Tự sắp xếp' cho đơn hàng không thuộc Shopee Mall, Người mua được hỗ trợ phí trả hàng bằng Shopee Xu như thế nào?
+Gold answer: Cùng tỉnh/thành phố với Người bán được hoàn 25.000 Shopee Xu; khác tỉnh/thành phố được hoàn 40.000 Shopee Xu. Shopee hỗ trợ trong 3–5 ngày làm việc sau khi yêu cầu trả hàng được chấp nhận hoàn tiền.
+Expected source document(s): phuong-thuc-gui-hang-va-phi-hoan-tra
+Metadata filter: none
+
+Top 1 | score=0.7956 | doc_id=phuong-thuc-gui-hang-va-phi-hoan-tra | audience=buyer
+2. Đối với đơn hàng không thuộc Shopee Mall, Shopee sẽ hoàn lại khoản phí này dưới hình thức hoàn Shopee Xu sau khi yêu cầu Trả hàng/Hoàn tiền được chấp nhận hoàn tiền và đáp ứng đầy đủ các điều kiện hỗ trợ phí trả hàng, số xu hoàn trả cố định theo 2 trường hợp sau:    * Trường h...
+
+Top 2 | score=0.7821 | doc_id=phuong-thuc-gui-hang-va-phi-hoan-tra | audience=buyer
+* Phí trả hàng vẫn có thể được hỗ trợ nếu bạn chọn trả hàng qua các đơn vị vận chuyển hỏa tốc như Grab Express, Ahamove, Be... Tuy nhiên, nếu Người bán có khiếu nại về hàng hoàn trả và Shopee không thể kiểm tra được hành trình đơn hàng hoàn trả của bạn, phí trả hàng sẽ KHÔNG được...
+
+Top 3 | score=0.7749 | doc_id=cam-nang-tra-hang-hoan-tien | audience=buyer
+* [_[Shopee Xu] Tôi có được hoàn lại Shopee Xu nếu đơn hàng bị hủy/được đồng ý hoàn tiền không?_](https://help.shopee.vn/s/article/toi-co-duoc-hoan-xu-sau-khi-yeu-cau-tra-hang-hoan-tien)
+
+========================================================================================
+Query 4: Khi Người bán gửi đề xuất Hoàn Tiền Ngay, Người mua có những lựa chọn xử lý nào nếu đồng ý hoặc không đồng ý?
+Gold answer: Nếu đồng ý, chọn 'Trao đổi thêm' rồi nhấn 'Đồng ý' để nhận tiền hoàn ngay mà không cần gửi trả hàng. Nếu không đồng ý, có thể chọn 'Trao đổi thêm' để chat thương lượng với Người bán, hoặc chọn 'Tôi muốn trả hàng' để tiếp tục quy trình trả sản phẩm và nhận toàn bộ số tiền theo yêu cầu ban đầu.
+Expected source document(s): nguoi-ban-de-xuat-hoan-tien-ngay
+Metadata filter: {'audience': 'both'}
+
+Top 1 | score=0.8716 | doc_id=nguoi-ban-de-xuat-hoan-tien-ngay | audience=both
+# Hướng dẫn Người mua trả lời đề xuất Hoàn Tiền Ngay của Người bán  Trong một số trường hợp, khi bạn tạo yêu cầu Trả hàng/Hoàn tiền (THHT), Người bán có thể gửi cho bạn một đề xuất Hoàn tiền ngay (một phần hoặc toàn bộ giá trị đơn hàng).  Điều này giúp rút ngắn thời gian xử lý và...
+
+Top 2 | score=0.8155 | doc_id=nguoi-ban-de-xuat-hoan-tien-ngay | audience=both
+![](https://fileproxy.scsusercontent.com/api/v5/service/download/lifecycle_2025/helpcenter-fe/888659bae46b46e0bf73254e6ce6f5ab.jpg)  Bước 2: Kiểm tra kỹ số tiền hoàn mà Người bán đề xuất  Trường hợp 1: Bạn đồng ý với số tiền Người bán đề xuất    * Chọn Trao đổi thêm    * Nhấn Đồn...
+
+Top 3 | score=0.7709 | doc_id=nguoi-ban-de-xuat-hoan-tien-ngay | audience=both
+Trường hợp 2:  Bạn KHÔNG đồng ý với số tiền Người bán đề xuất  Bạn có thể chọn 1 trong 2 cách sau:    * Nhấn Trao đổi thêm để Chat với Người bán nếu cần thương lượng thêm  ![](https://fileproxy.scsusercontent.com/api/v5/service/download/lifecycle_2025/helpcenter-fe/bfdc3b8c2d214d...
+
+========================================================================================
+Query 5: Thời gian nhận tiền hoàn vào Ví ShopeePay, SPayLater và Thẻ tín dụng/ghi nợ mất bao lâu sau khi Shopee chấp nhận hoàn tiền?
+Gold answer: Ví ShopeePay và SPayLater nhận tiền trong vòng 24 giờ khi ví hoạt động bình thường; tiền hoàn SPayLater vào số dư khả dụng. Thẻ tín dụng/ghi nợ mất 7–14 ngày làm việc, tùy ngân hàng phát hành thẻ.
+Expected source document(s): thoi-gian-va-cach-kiem-tra-tien-hoan
+Metadata filter: none
+
+Top 1 | score=0.8693 | doc_id=thoi-gian-va-cach-kiem-tra-tien-hoan | audience=buyer
+Phương thức thanh toán| Tiền hoàn trả được gửi qua| Thời gian nhận được tiền hoàn sau khi Shopee chấp nhận hoàn tiền   ---|---|---
+
+Top 2 | score=0.8549 | doc_id=thoi-gian-va-cach-kiem-tra-tien-hoan | audience=buyer
+# Thời gian nhận tiền hoàn và cách kiểm tra tiền hoàn trên Shopee  Sau khi gửi trả hàng, bạn sẽ nhận được thông báo xác nhận hoàn tiền qua mục Thông báo > Cập nhật đơn hàng trên ứng dụng Shopee, sau đó tiền sẽ được hoàn theo các phương thức thanh toán sau:
+
+Top 3 | score=0.8367 | doc_id=thoi-gian-va-cach-kiem-tra-tien-hoan | audience=buyer
+* Đối với các hình thức hoàn tiền về Ví Shopee Pay, tại thời điểm xử lý hoàn tiền, ví cần ở trạng thái bình thường và còn liên kết với tài khoản Shopee để việc hoàn tiền thành công trong 24h.
